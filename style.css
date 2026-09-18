@@ -259,6 +259,11 @@ img {
   max-width: 1895px;
 }
 
+.wd-top-piece {
+  aspect-ratio: 1638 / 820;
+  overflow: hidden;
+}
+
 .wd-assembled-page img {
   display: block;
   height: auto;
