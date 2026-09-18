@@ -133,39 +133,6 @@ img {
   background: linear-gradient(to right, rgba(0,0,0,0.58), rgba(0,0,0,0.16));
 }
 
-.hero-code {
-  position: absolute;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.8rem;
-  line-height: 1.3;
-  letter-spacing: 0.02em;
-}
-
-.hero-code-top {
-  top: 30px;
-  left: 38px;
-}
-
-.hero-code-right {
-  top: 56px;
-  left: 42%;
-}
-
-.token {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.token.blue { color: #6dd3ff; }
-.token.purple { color: #d17efb; }
-.token.green { color: #4fe0a8; }
-.token.pink { color: #ff72d2; }
-
 .hero-title-wrap {
   position: absolute;
   inset: 0;
