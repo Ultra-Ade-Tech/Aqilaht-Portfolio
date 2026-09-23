@@ -555,3 +555,222 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Scratch portfolio page */
+.scratch-page {
+  background: #f5efe3;
+  color: #172d35;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.scratch-header {
+  align-items: center;
+  background: #17343a;
+  color: #f4f0e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px clamp(20px, 5vw, 72px);
+}
+
+.scratch-header p,
+.scratch-back {
+  font: 0.78rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.scratch-back {
+  color: #f4f0e8;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.scratch-main {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.scratch-hero {
+  min-height: 590px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scratch-hero::after {
+  background: linear-gradient(90deg, rgba(10, 33, 38, 0.76), rgba(10, 33, 38, 0.04) 75%);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.scratch-hero > img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.scratch-hero-copy {
+  color: #fffaf2;
+  max-width: 560px;
+  padding: 150px clamp(28px, 9vw, 140px);
+  position: relative;
+  z-index: 1;
+}
+
+.scratch-kicker {
+  color: #c46c42;
+  font: 700 0.7rem/1.4 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.18em;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.scratch-hero h1 {
+  font-size: clamp(4.3rem, 10vw, 9rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.82;
+  margin: 0;
+}
+
+.scratch-hero h1 em {
+  color: #f2ae51;
+  font-style: italic;
+}
+
+.scratch-hero-copy > p:not(.scratch-kicker) {
+  font-size: 1.12rem;
+  line-height: 1.5;
+  margin: 38px 0 28px;
+  max-width: 360px;
+}
+
+.scratch-scroll {
+  color: #fffaf2;
+  font: 700 0.75rem/1 Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.scratch-scroll span {
+  color: #f2ae51;
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+
+.scratch-section {
+  padding: 100px clamp(24px, 7vw, 110px);
+}
+
+.scratch-section-tinted {
+  background: #e7d7bd;
+}
+
+.scratch-section-heading {
+  margin-bottom: 42px;
+  max-width: 650px;
+}
+
+.scratch-section-heading h2 {
+  color: #17343a;
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  margin: 0 0 18px;
+}
+
+.scratch-section-heading > p:last-child {
+  color: #526067;
+  font: 1rem/1.55 Arial, Helvetica, sans-serif;
+  margin: 0;
+  max-width: 480px;
+}
+
+.scratch-grid {
+  display: grid;
+  gap: 54px 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scratch-project-wide {
+  grid-column: 1 / -1;
+}
+
+.scratch-project a {
+  background: #fffaf2;
+  border: 1px solid rgba(23, 52, 58, 0.12);
+  display: block;
+  overflow: hidden;
+}
+
+.scratch-project img {
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+  width: 100%;
+}
+
+.scratch-project a:hover img {
+  transform: scale(1.015);
+}
+
+.scratch-project-meta {
+  padding: 16px 2px 0;
+}
+
+.scratch-project-meta h3 {
+  color: #17343a;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 0 0 7px;
+}
+
+.scratch-project-meta p {
+  color: #526067;
+  font: 0.87rem/1.5 Arial, Helvetica, sans-serif;
+  margin: 0;
+  max-width: 430px;
+}
+
+.scratch-footer-note {
+  border-top: 1px solid rgba(23, 52, 58, 0.2);
+  color: #526067;
+  font-size: 1rem;
+  margin: 80px 0 0;
+  padding-top: 18px;
+}
+
+@media (max-width: 720px) {
+  .scratch-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .scratch-hero {
+    min-height: 520px;
+  }
+
+  .scratch-hero-copy {
+    padding: 110px 24px;
+  }
+
+  .scratch-section {
+    padding: 70px 20px;
+  }
+
+  .scratch-grid {
+    gap: 42px;
+    grid-template-columns: 1fr;
+  }
+
+  .scratch-project-wide {
+    grid-column: auto;
+  }
+}
