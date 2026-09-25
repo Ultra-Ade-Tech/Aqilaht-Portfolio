@@ -13,10 +13,7 @@ html, body {
 body {
   min-height: 100vh;
 }
-.wd-assembled-header {
-  background: url("wd.jpg") no-repeat center center;
-  background-size: cover;
-}
+
 
 img {
   max-width: 100%;
@@ -507,6 +504,16 @@ img {
   font-size: 1.35rem;
   font-weight: 400;
   margin: 0 0 7px;
+}
+
+.wd-project-meta h3 a {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  display: inline;
+  overflow: visible;
+  text-decoration-color: #b35e37;
+  text-underline-offset: 4px;
 }
 
 .wd-project-meta p {
@@ -1306,4 +1313,17 @@ img {
   .class-section {
     padding: 70px 20px;
   }
+}
+.wd-assembled-header {
+  background: linear-gradient(rgba(14, 24, 26, 0.38), rgba(14, 24, 26, 0.38)), url("wd.jpg") center 45% / cover no-repeat;
+  min-height: 190px;
+}
+
+.wd-assembled-header p,
+.wd-assembled-header .wd-assembled-back {
+  background: #ffdf33;
+  border-radius: 4px;
+  color: #1b252b;
+  padding: 10px 14px;
+  text-shadow: none;
 }
