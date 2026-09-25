@@ -13,6 +13,10 @@ html, body {
 body {
   min-height: 100vh;
 }
+.wd-assembled-header {
+  background: url(WD\ copy.jpg) no-repeat center center;
+  background-size: cover;
+}
 
 img {
   max-width: 100%;
@@ -279,6 +283,41 @@ img {
 .wd-top-piece {
   aspect-ratio: 1638 / 820;
   overflow: hidden;
+  position: relative;
+}
+
+.wd-top-piece::after {
+  background: linear-gradient(90deg, rgba(12, 23, 25, 0.72), rgba(12, 23, 25, 0.08));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.wd-top-piece img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wd-top-copy {
+  bottom: 0;
+  color: #ffffff;
+  left: 0;
+  padding: clamp(24px, 6vw, 88px);
+  position: absolute;
+  z-index: 1;
+}
+
+.wd-top-copy p {
+  color: #f0b47d;
+  font: 700 0.72rem/1.4 Arial, Helvetica, sans-serif;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.wd-top-copy h1 {
+  font: 400 clamp(2.6rem, 7vw, 6.5rem)/0.95 Georgia, "Times New Roman", serif;
+  margin: 0;
 }
 
 .wd-assembled-page img {
