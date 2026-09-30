@@ -783,6 +783,20 @@ img {
   transform: scale(1.015);
 }
 
+.scratch-embed {
+  aspect-ratio: 485 / 402;
+  background: #fffaf2;
+  border: 1px solid rgba(23, 52, 58, 0.12);
+  overflow: hidden;
+}
+
+.scratch-embed iframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .scratch-project-meta {
   padding: 16px 2px 0;
 }
