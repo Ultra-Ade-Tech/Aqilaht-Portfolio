@@ -495,6 +495,20 @@ img {
   transform: scale(1.015);
 }
 
+.wd-scratch-embed {
+  aspect-ratio: 485 / 402;
+  background: #ffffff;
+  border: 1px solid rgba(23, 52, 58, 0.12);
+  overflow: hidden;
+}
+
+.wd-scratch-embed iframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .wd-project-meta {
   padding: 16px 2px 0;
 }
