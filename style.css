@@ -18,6 +18,20 @@ body {
 img {
   max-width: 100%;
   display: block;
+/* Scratch portfolio page */
+.scratch-embed-only {
+  align-items: center;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.scratch-embed-only iframe {
+  border: 0;
+  max-width: 100%;
+}
 }
 
 .page-shell {
