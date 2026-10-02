@@ -18,6 +18,8 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
 /* Scratch portfolio page */
 .scratch-embed-only {
   align-items: center;
@@ -31,7 +33,6 @@ img {
 .scratch-embed-only iframe {
   border: 0;
   max-width: 100%;
-}
 }
 
 .page-shell {
@@ -490,6 +491,11 @@ img {
   grid-column: 1 / -1;
 }
 
+.wd-project {
+  display: flex;
+  flex-direction: column;
+}
+
 .wd-project a {
   display: block;
   overflow: hidden;
@@ -503,6 +509,23 @@ img {
   max-height: 620px;
   object-fit: contain;
   transition: transform 0.35s ease;
+}
+
+.wd-project .scratch-embed {
+  display: block;
+  width: 100%;
+  aspect-ratio: 485 / 402;
+  background: #fffaf2;
+  border: 1px solid rgba(23, 52, 58, 0.12);
+  overflow: hidden;
+}
+
+.wd-project .scratch-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fffaf2;
 }
 
 .wd-project a:hover img {
@@ -806,6 +829,12 @@ img {
 
 .scratch-embed iframe {
   border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.wd-project .scratch-embed iframe {
   display: block;
   height: 100%;
   width: 100%;
